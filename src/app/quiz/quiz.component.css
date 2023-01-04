@@ -1,0 +1,122 @@
+/* global css */
+.icon  {
+    width: 16px;
+    cursor: pointer;
+}
+.sideBar {
+    border-right: 1px solid #f0f0f0
+}
+.d-f {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4%
+}
+.btn:focus {
+    outline: none;
+    box-shadow: none;
+  }
+
+
+
+/* input serach */
+.inputSearch {
+    position: relative;
+}
+
+input[type=search] {
+    background: #f0f0f0;
+    padding-left:30px;
+}
+.inputSearch .searchIcon {
+    position: absolute;
+    left: 8px;
+    top: 4px;
+}
+/* end input serach */
+
+/* list of quiz */
+
+.listOfQuizes ul{
+    margin-top: 5px;
+    height: 100px;
+    overflow: scroll;
+    list-style: auto;
+    padding: 0 7px 0 21px;
+
+}
+.listOfQuizes ul li {
+    background: #f0f0f0;
+    margin-bottom: 5px;
+    padding: 5px
+}
+/* ......... */
+
+
+/* main */
+
+.main {
+    background: #fbfbfb
+}
+.main .info{
+    display: flex;
+}
+.main .info .share {
+    padding: 0 3% 0% 3%;
+    color: #737373
+}
+.main .info .courseName{
+    padding: 0 6% 0 0;
+    border-right: 1px solid #f0f0f0
+}
+
+.createQuiz button{
+    background: #353535;
+    color: #fff
+}
+.createQuiz button span {
+    background: #ffff;
+    color: #000;
+    padding: 0 10px;
+
+}
+.dateAndList button{
+    background: #e4e4e4;
+    color: #000
+}
+.dateAndList .createDate{
+    margin-right: 10px
+}
+.dateAndList .List{
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+.dateAndList .activeTitle {
+    background: #747474
+}
+.dateAndList .Grid {
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0
+}
+.quizsTable  table {
+    border: none;
+}
+.quizsTable  table th {
+    border: none
+}
+.quizsTable  table td {
+    border: none;
+}
+.quizsTable table button {
+    background: #f0f0f0
+}
+.quizsTable table p {
+    font-size: 12px;
+    color: #747474;
+    margin: 0
+}
+.quizsTable table .tableRow{
+    background: #fff;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    margin-bottom: 5px
+}

@@ -1,0 +1,41 @@
+
+<section class="our_instructors" *ngIf="showSlider">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                <owl-carousel-o [options]="customOptions">
+                    <ng-template carouselSlide *ngFor="let item of Entiets">
+                        <div class="slide" style="cursor: pointer">
+                            <img src="{{item.Image}}" (click)="getEntity(item,item.ID)"
+                            style="width:200px ; height: 120px;" />
+                        </div>
+                    </ng-template>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+
+<div class="mainDiv">
+    <div class="container">
+        <div class="row flex-row-reverse">
+            <div style="cursor: pointer ;" class="col-md-4 col-12" *ngFor="let item of productArr"
+                (click)="goToDet(item.Id)">
+                <div class="card">
+                    <img src="{{item.ProductImages[0]}}" class="img-responsive">
+                    <div>
+                        <h3>{{item.Title}}</h3>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.9)" size="default" type="ball-spin-clockwise">
+        <p style="color: white">Please Wait. </p>
+    </ngx-spinner>

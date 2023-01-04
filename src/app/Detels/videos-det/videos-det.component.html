@@ -1,0 +1,188 @@
+<div class="section-type-k booksInFullScreen">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4">
+        <aside class="sidebar">
+          <section class="widget">
+            <h2 class="widget-title ui-title-inner text-right">تابعنا</h2>
+            <div class="decor-right"></div>
+            <div class="row socialOnly">
+              <div class="col offset-2">
+                <a class="faceBook" target="_blank"
+                  href="https://www.facebook.com/Culture-Gate-103834857931056/?__tn__=%2Cd%2CP-R&eid=ARCqmJ0rfdS5oaPqLjtfFvrs8qCzM53J-MI_hROHKC54CPe-Qlvm6fAhL_vbUtnvnqWXNDt4YgTpxezm"><i
+                    class="fa fa-facebook-square"></i> </a>
+              </div>
+              <div class="col">
+                <a class="youtube" target="_blank"
+                  href="https://www.youtube.com/channel/UCGw9Yn-_j6CpysvnhVUeT4w/about"><i
+                    class="fa fa-youtube-square"></i></a>
+              </div>
+            </div>
+
+          </section>
+        </aside>
+      </div>
+      <div class="col-md-8" style="text-align: right">
+        <article class="post post-full clearfix">
+          <div class="entry-media">
+            <img class="imageStyle" src="{{image}}" style="height:400px">
+          </div>
+          <div class="entry-main">
+            <div class="entry-header categoriName">
+              <span>{{ProductType}}</span>
+              <h2 class="entry-title titleOfHead"><a>{{title}}</a></h2>
+            </div>
+            <div class="entry-content">
+              <p>{{details}}</p>
+            </div>
+          </div>
+          <!-- <div class="entry-main">
+            <h1>معرض الصور</h1>
+            <hr>
+            <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery>
+          </div> -->
+          <button style="margin-bottom:10px; margin-right: 5px" class="booking btn btn-primary" (click)="saveEvent()">اضف الي السلة</button>
+          <button style="margin-bottom:10px" class="booking btn btn-primary"(click)="goToPay()">شراء</button>
+        </article>
+      </div>
+    </div>
+  </div>
+</div> 
+
+
+
+<!-- <div *ngIf="contanioOrPay"
+ class="modal fade text-right" id="myModalForBoking" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+             <div class="modal-body">
+                    <p>asd</p>
+                </div> 
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary"></button>
+                <button type="button" class="btn btn-danger" style="margin-left:20%"
+                (click)="">ادفع</button>
+            </div>
+        </div>
+    </div>
+</div> -->
+
+
+
+<!-- <button style="display: none" data-toggle="modal" data-target="#myModal" id="myModalaa">click</button> -->
+
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.9)" size="default" type="ball-spin-clockwise">
+    <p style="color: white">Please Wait. </p>
+</ngx-spinner>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- videosRespon 
+  <div class="section-type-k booksInResponsive" *ngIf="videos">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8" style="text-align: right">
+            <article class="post post-full clearfix">
+              <div class="entry-media">
+                <img src="{{image}}">
+                   <iframe width="350" class="e2e-iframe-trusted-src" height="315" [src]="videoUrl" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> 
+              </div>
+              <div class="entry-main">
+                <div class="entry-header categoriName">
+                  <h2 class="entry-title titleOfHead"><a>{{title}}</a></h2>
+                </div>
+                <div class="entry-content">
+                  <p>{{details}}</p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class="col-md-4">
+              <aside class="sidebar">
+                <section class="widget">
+                  <h2 class="widget-title ui-title-inner text-right">تابعنا</h2>
+                  <div class="decor-right"></div>
+                  <div class="row socialOnly">
+                    <div class="col offset-2">
+                        <a class="faceBook" target="_blank" href="https://www.facebook.com/Culture-Gate-103834857931056/?__tn__=%2Cd%2CP-R&eid=ARCqmJ0rfdS5oaPqLjtfFvrs8qCzM53J-MI_hROHKC54CPe-Qlvm6fAhL_vbUtnvnqWXNDt4YgTpxezm"><i class="fa fa-facebook-square"></i> </a>
+                    </div>
+                    <div class="col">
+                        <a class="youtube" target="_blank" href="https://www.youtube.com/channel/UCGw9Yn-_j6CpysvnhVUeT4w/about"><i class="fa fa-youtube-square"></i></a>
+                    </div>
+                  </div>
+                </section>
+              </aside>
+            </div>
+        </div>
+      </div>
+      </div>
+    -->
+
+<!-- kotb -->
+
+<!-- responsive 
+
+    <div class="section-type-k booksInResponsive" >
+        <div class="container">
+          <div class="row">
+           
+            <div class="col-md-8" style="text-align: right">
+              <article class="post post-full clearfix">
+                <div class="entry-media">
+                  <img src="{{bookImage}}" style="width: 350px ; height: 300px;" >
+                </div>
+                <div class="entry-main">
+                  <div class="entry-header categoriName">
+                    <h2 class="entry-title titleOfHead"><a>{{name}}</a></h2>
+                  </div>
+                  <div class="entry-content">
+                    <p>{{Details}}</p>
+                    <button class="btn btnButton" style="margin-bottom: 10%" ><a href="{{link}}" target="_blank">إطلاع</a></button>
+                  </div>
+                </div>
+              </article>
+            </div>
+
+            <div class="col-md-4">
+                <aside class="sidebar">
+                  <section class="widget">
+                    <h2 class="widget-title ui-title-inner text-right">تابعنا</h2>
+                    <div class="decor-right"></div>
+                        <div class="decor-right"></div>
+                        <div class="row socialOnly">
+                          <div class="col offset-2">
+                              <a class="faceBook" target="_blank" href="https://www.facebook.com/Culture-Gate-103834857931056/?__tn__=%2Cd%2CP-R&eid=ARCqmJ0rfdS5oaPqLjtfFvrs8qCzM53J-MI_hROHKC54CPe-Qlvm6fAhL_vbUtnvnqWXNDt4YgTpxezm"><i class="fa fa-facebook-square"></i> </a>
+                          </div>
+                          <div class="col">
+                              <a class="youtube" target="_blank" href="https://www.youtube.com/channel/UCGw9Yn-_j6CpysvnhVUeT4w/about"><i class="fa fa-youtube-square"></i></a>
+                          </div>
+                        </div>
+                  </section>
+                  <section class="widget widget2">
+                      <h2 class="widget-title ui-title-inner text-right">أحدث كنز ثقافي</h2>
+                      <div class="decor-right"></div>
+                      <div class="widget-content">
+                        <article class="post post-3 post-3_mod-a clearfix" *ngFor="let item of LatestculturalTreasure">
+                          <div (click)="runVideo(item.Id)">
+                            <img src="{{item.Image}}" style="width:323px;height: 200px;" alt="Foto">
+                          </div>
+                        </article>
+                      </div>
+                    </section>
+                </aside>
+              </div>
+          </div>
+        </div>
+        </div>
+
+-->

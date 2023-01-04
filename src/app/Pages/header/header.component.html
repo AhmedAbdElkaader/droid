@@ -1,0 +1,85 @@
+<div class="upHeader">
+  <div class="container">
+    <div class="row">
+      <div class="col"> 
+        <span (click)="goToCheakOut()" >
+          <i class="fa fa-shopping-cart"></i>
+        </span>
+      </div>
+      <div class="col">
+        <div class="float-right login">
+            <span class="shopCard">{{userName}}</span>
+
+          <span class="user " *ngIf="notLogain">
+            <i data-toggle="modal" data-target="#myModal" id="myModalaa" class="fa fa-user"></i>
+          </span>
+
+          <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+            <app-sing-in></app-sing-in>
+          </div>
+
+          <a class="dropdown" *ngIf="whenLogin">
+              <a id="dLabel" type="button" data-toggle="dropdown" aria-haspopup="true"
+                  aria-expanded="false" class="menuAn">
+                  <span class="user ">
+                      <i  class="fa fa-user"></i>
+                    </span>              </a>
+              <ul class="dropdown-menu" aria-labelledby="dLabel">
+                  <a  class="dropAn" [routerLink]="'FeesCheck'" style="cursor: pointer ;margin-right: 11px;display: block;                  ">تفاصيل  عمليات الشراء</a>
+                  <a (click)="logOut()" class="dropAn" style="cursor: pointer ;margin-right: 11px;">خروج</a>
+              </ul>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="header">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-3 col-2">
+        <ul class="headUl">
+
+          <li class="LiFaceBook"><a target="_blank"
+              href="https://www.facebook.com/Culture-Gate-103834857931056/?__tn__=%2Cd%2CP-R&eid=ARCqmJ0rfdS5oaPqLjtfFvrs8qCzM53J-MI_hROHKC54CPe-Qlvm6fAhL_vbUtnvnqWXNDt4YgTpxezm"><i
+                class="fa fa-facebook"></i></a></li>
+          <li><a target="_blank" href="https://www.youtube.com/channel/UCGw9Yn-_j6CpysvnhVUeT4w/about"><i
+                class="fa fa-youtube"></i></a></li>
+        </ul>
+      </div>
+
+      <div class="col-md-7 col-8" style="text-align: center">
+        <h1 class="headTitle">{{header}}</h1>
+      </div>
+
+      <div class="col-md-2 col-2 imgD">
+        <img [routerLink]="'product'" src="../../../assets/final-03.png" class="img-fluid">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<button id="myModala" data-toggle="modal" data-target="#myModalOnLoad" style="display: none">click</button>
+
+<div class="modal fade homepage-popup" id="myModalOnLoad" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-body">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span
+            aria-hidden="true">&times;</span></button>
+        <img src="../../../assets/final-03.png" style="width:200px" alt="">
+        <h1>بث تجريبي</h1>
+        <div class="progress">
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.9)" size="default" type="ball-spin-clockwise">
+    <p style="color: white">Please Wait. </p>
+</ngx-spinner>

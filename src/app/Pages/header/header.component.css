@@ -1,0 +1,328 @@
+.header{
+  background: #123b4e
+}
+img{
+  width:88px;
+  margin-top: 2px;
+}
+ul li{
+  list-style: none;
+  float: left;
+}
+ul li i{
+  color: white;
+  margin-top: 23px;
+  font-size: 40px;
+  margin-right: 12px;
+}
+
+.tickerContainer{
+  overflow-x: hidden;
+  overflow-y: scroll;
+  white-space: nowrap;
+  margin-top:7px;
+}
+
+:host ::ng-deep .newsticker>.nt-content>label {
+  font-size: 25px;
+  text-align: center;
+}
+:host ::ng-deep .newsticker>.nt-content {
+  right: 13px !important;
+}
+:host ::ng-deep .newsticker>.nt-navi {
+  display: none !important;
+}
+
+.headTitle{
+  margin-top: 13px;
+  margin-bottom: 13px;
+  font-size: 3.7em;
+  color: white;
+}
+.homepage-popup {
+  padding-top: 70px;
+}
+
+.homepage-popup .modal-content {
+  border: 0;
+}
+
+.homepage-popup .modal-body {
+  text-align: center;
+  position: relative;
+  height: 400px;
+  padding: 40px 0 70px;
+}
+
+.homepage-popup .modal-body .close {
+  background-color:rgba(4, 34, 45, 0.81);
+  color: #ffffff;
+  font-size: 22px;
+  border-radius: 500px;
+  position: absolute;
+  top: -24px;
+  right: -24px;
+  opacity: 1;
+  width: 60px;
+  height: 60px;
+  text-shadow: none;
+}
+
+.homepage-popup .modal-body .close:hover span {
+  color: #f8941e;
+}
+
+.homepage-popup .modal-body .close span {
+  font-size: 71px;
+  position: relative;
+  top: -11px;
+  font-weight: normal;
+}
+
+.homepage-popup .modal-body .progress {
+  display: inline-block;
+  position: relative;
+  border-radius: 32px;
+  background-color: #e4e4e4;
+  width: 474px;
+  height: 19px;
+}
+.modal-content {
+  background: #c0c6c7 !important;
+}
+.homepage-popup .modal-body .progress span {
+  width: 60%;
+  height: 19px;
+  display: inline-block;
+  border-radius: 32px;
+  background-color: #47a3da;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.homepage-popup .modal-body::before,
+.homepage-popup .modal-body::after {
+  content: "";
+  background-color:rgba(4, 34, 45, 1);
+  position: absolute;
+  display: inline-block;
+  width: 260px;
+  height: 120px;
+}
+
+.homepage-popup .modal-body::before {
+  top: 0;
+  left: 0;
+  -webkit-clip-path: polygon(100% 0, 0 100%, 0 0);
+  clip-path: polygon(100% 0, 0 100%, 0 0);
+  border-radius: 5px 0 0;
+}
+
+.homepage-popup .modal-body::after {
+  bottom: 0;
+  right: 0;
+  -webkit-clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  border-radius: 0 0 5px;
+
+}
+
+.homepage-popup .modal-body img {
+  width: 303px;
+}
+.homepage-popup h1{
+  font-size: 4em;
+  color: white
+}
+.homepage-popup .modal-body p {
+  text-align: center;
+  font-size: 28px;
+  color: #8b8b8b;
+  text-transform: capitalize;
+  margin-bottom: 30px;
+}
+
+.homepage-popup .modal-body p:last-of-type {
+  margin-bottom: 35px;
+}
+
+nav a {
+  font-size:30px;
+}
+nav .active , .unActive{
+  color: white;
+  text-decoration: none
+}
+nav .unActive:hover{
+  color: #47a3da !important
+}
+nav{
+  background: #04212d
+  
+}
+
+.active {
+  background: #ad781e;
+  border-radius:5px;
+}
+.active:hover{
+  color: white !important;
+}
+
+.upHeader{
+  background: #04222d
+}
+
+.shopCard{
+  margin-right: 5px;
+
+}
+.user{
+margin-right:100px 
+}
+.user i {
+  font-size: 20px;
+  color: white
+}
+
+.fa-shopping-cart{
+  font-size: 35px;
+  margin-left: 38px;
+  cursor: pointer;
+  color: white
+
+
+}
+.shopCard{
+  color: white
+}
+
+
+
+/* ----------- iPhone 6, 6S, 7 and 8 -----------
+@media only screen 
+and (min-device-width: 375px) 
+and (max-device-width: 667px) 
+and (-webkit-min-device-pixel-ratio: 2) { 
+.headTitle{
+  margin-top: 33%;
+  font-size:19px;
+}
+ul li i{
+  font-size: 30px;
+}
+.LiFaceBook{
+margin-left: -33px
+}
+
+} */
+.arrowD {
+  background-color: #ad781e;
+  padding: 3px 5px;
+    border-radius: 5px;
+}
+.fa-arrow-down {
+  color: #fff;
+  font-size: 25px;
+}
+
+.dropdown.open .dropdown-menu {
+  opacity: 1;
+  z-index: 2000;
+}
+.dropdown-menu {
+  left: -143px !important;
+  text-align: right;
+  padding: 10px 0px 10px 8px;
+
+}
+
+.dropAn{
+  text-decoration: none;
+  color: black
+}
+
+
+/* ---------- phones --------*/
+@media only screen and (min-device-width:320px) and (max-device-width: 375px) {
+  .headTitle {
+    font-size: 20px;
+  }
+  .fa-facebook, .fa-youtube {
+    font-size: 17px !important;
+  }
+  .headUl li{
+    float:left;
+    width:50%; /* or whatever dimensions you require, padding etc*/
+  }
+  .headUl {
+    padding-left: 0px;
+    margin-top: -5px;
+  }
+  .imgD{
+    margin-left: -10px;
+    margin-top: 5px;
+  }
+  .imgD .img-fluid {
+    max-width: none;
+    width: 40px;
+  }
+}
+  
+
+@media only screen and (min-device-width:375px) and (max-device-width: 768px) {
+  .headTitle {
+    font-size: 20px;
+  }
+  .fa-facebook, .fa-youtube {
+    font-size: 17px !important;
+  }
+  .headUl li{
+    float:left;
+    width:50%; /* or whatever dimensions you require, padding etc*/
+  }
+  .headUl {
+    padding-left: 0px;
+    margin-top: -12px;
+    margin-left: 8px;
+  }
+  .img-fluid {
+    margin-left: -10px;
+  }
+  ul{ 
+    margin-top: 15px;
+  }
+}
+
+
+
+.login{
+  margin-top: 6px;
+}
+
+@media only screen and (min-device-width:768px) and (max-device-width: 1024px) {
+  .headTitle {
+    font-size: 30px;
+  }
+  .fa-facebook, .fa-youtube {
+    font-size: 30px !important;
+  }
+  .headUl li{
+    float:left;
+    width:50%; /* or whatever dimensions you require, padding etc*/
+  }
+  .headUl {
+    padding-left: 0px;
+    margin-top: 0px;
+    margin-left: 8px;
+  }
+  .img-fluid {
+    margin-left: -10px;
+  }
+  ul{
+    margin-top: 15px;
+  }
+}
+/* ---------- phones --------*/

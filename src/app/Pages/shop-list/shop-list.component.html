@@ -1,0 +1,22 @@
+
+<div class="mainDiv">
+        <div class="container">
+            <div class="row flex-row-reverse">
+                <div style="cursor: pointer ;" class="col-md-4 col-12" *ngFor="let item of productArr"
+                    (click)="goToDet(item.Id)">
+                    <div class="card">
+                        <img src="{{item.ProductImages[0]}}" class="img-responsive">
+                        <div>
+                            <h3>{{item.Title}}</h3>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+        </div>
+    </div>
+
+    <ngx-spinner
+  bdColor="rgba(0, 0, 0, 1)">
+  template="<img src='https://media.giphy.com/media/o8igknyuKs6aY/giphy.gif'/>" 
+</ngx-spinner>

@@ -1,0 +1,57 @@
+<div class="modal-dialog" role="document">
+    <div class="modal-content">
+        <div class="modal-body">
+            <ul class="nav nav-tabs" id="myTab" role="tablist" *ngIf="showTab">
+
+                <li class="nav-item" style="margin-left: 23%;">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#login" role="tab"
+                        aria-controls="login" aria-selected="true">تسجيل الدخول</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="tab" href="#register" role="tab"
+                        aria-controls="register" aria-selected="false">إتشاء حساب</a>
+                </li>
+                <button type="button" class="close inverseB" data-dismiss="modal" aria-label="Close"><span
+                        aria-hidden="true">&times;</span></button>
+            </ul>
+
+            <div class="tab-content" id="myTabContent" *ngIf="showTab">
+
+                <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="home-tab">
+                    <h3 style="text-align: center">تسجيل الدخول</h3>
+                    <form [formGroup]="formLogin">
+                        <input type="text" placeholder="Your Email" formControlName="username"
+                            class="form-control"><br />
+                        <input type="password" placeholder="Your Password" formControlName="password"
+                            class="form-control"><br />
+                    </form>
+                    <br /><button type="button" class="btn btn-primary" (click)="login()" data-dismiss="modal"
+                        aria-label="Close" [disabled]="!formLogin.valid" style="margin-bottom:15px;">تسجيل دخول</button>
+                </div>
+
+                <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="profile-tab">
+
+                    <h3 style="text-align: center">انشاء حساب جديد</h3>
+                    <form [formGroup]="form">
+                        <input type="text" placeholder="Name" formControlName="UserName" class="form-control" /><br />
+
+                        <input type="text" placeholder="Email" formControlName="Email" class="form-control" /><br />
+
+                        <input type="password" placeholder="Password" formControlName="Password"
+                            class="form-control" /><br />
+
+                        <input type="password" placeholder="Repeat password" formControlName="ConfirmPassword"
+                            class="form-control" /><br />
+                    </form>
+                    <br />
+                    <button type="button" class="btn btn-primary " [disabled]="!form.valid" data-dismiss="modal"
+                        aria-label="Close" (click)="register()" style="margin-bottom:15px;">تسجيل</button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.9)" size="default" type="ball-spin-clockwise">
+        <p style="color: white">Please Wait. </p>
+ </ngx-spinner>

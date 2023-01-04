@@ -1,0 +1,65 @@
+<button  data-toggle="modal" *ngIf="showButtonOfAdress"
+ data-target="#myModalForPayment" id="myModalaa" class="btn btn-primary buttonShop">اضف عنوانك</button>
+
+<div class="main" *ngIf="fessIsPayed">
+    <div class="masg">
+        <h1>لقد تم الدفع</h1>
+    </div>
+</div>
+
+
+<div class="main" *ngIf="!fessIsPayed">
+    <div class="masg">
+        <h1 [innerHTML]="masge"></h1>
+    </div>
+</div>
+
+
+<div  style="overflow: scroll" class="modal fade text-right" id="myModalForPayment" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <h2 style="text-align: center ; margin-top: 10px;">ادخل العنوان من فضلك</h2>
+            <hr>
+            <div class="modal-body">
+                <form [formGroup]="formForPayment">
+                    <input type="text" placeholder="الأسم" formControlName="ClientName" class="form-control"><br />
+                    <input type="email" placeholder="البريد الإلكتروني" formControlName="Email" class="form-control"><br />
+                    <input type="text" placeholder="رقم المحمول" formControlName="PhoneNumber"
+                        class="form-control"><br />
+                    <input type="text" placeholder="المحافظة" formControlName="City" class="form-control"><br />
+                    <input type="text" placeholder="المنطقة" formControlName="Distinct" class="form-control"><br />
+                    <input type="text" placeholder="اسم الشارع" formControlName="StreetName" class="form-control"><br />
+                    <input type="number" placeholder="رقم العمارة" formControlName="BuldNo" class="form-control"><br />
+                    <input type="number" placeholder="رقم الدور" formControlName="FloorNo" class="form-control"><br />
+                    <input type="number" placeholder="رقم الشقة" formControlName="FlatNo" class="form-control"><br />
+                    <input type="text" placeholder="علامة مميزة للمبني" formControlName="SpecificSign" class="form-control"><br />
+                    <input type="text" placeholder="رقم محمول اخر" formControlName="otherPhone" class="form-control"><br />
+
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger" data-dismiss="modal">إلفاء</button>
+                <button (click)="sendUserAdress()" type="button" class="btn btn-primary" data-dismiss="modal" [disabled]="!formForPayment.valid">ارسال</button>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<ngx-spinner bdColor="rgba(51, 51, 51, 0.9)" size="default" type="ball-spin-clockwise">
+    <p style="color: white">Please Wait. </p>
+</ngx-spinner>
+
+
+
+<div  style="overflow: scroll" class="modal fade text-right" id="myModelForDone" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-body">
+                <h1>{{masgeIFdone}}</h1>
+            </div>
+        </div>
+    </div>
+</div> 
+
+<button  data-toggle="modal" style="display: none"
+ data-target="#myModelForDone" id="myModalaaa" class="btn btn-primary buttonShop"></button>
